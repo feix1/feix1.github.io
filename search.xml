@@ -1,21 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/01/31/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <title>搭建博客</title>
+    <url>/2020/02/16/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="1、动机"><a href="#1、动机" class="headerlink" title="1、动机"></a>1、动机</h1><p>&emsp; &emsp; 作为一名专业与工作都与计算机相关的社畜，无时无刻都想融入到程序员这个群体中，并不是说一定要往这个就业方向发展，只想在当前的温床环境下多学一份技能。在看过许许多多程序猿大佬的心得体会后，许多大佬都推荐写blog来记录自己的学习笔记，即可用来温习，也可用来在就业时展示。同时，飞快发展的技术环境带来的庞大的信息量，博客这个仿佛早已“过时”的工具非常适合替代纸笔记录的方式，有着更高效率和更强内容的丰富性。博客同时也可以用来作个人日记，一段文字，一张图片就可以概括一天的感受，或者记录一些不好意思分享的事情。</p>
+<h1 id="2、思路"><a href="#2、思路" class="headerlink" title="2、思路"></a>2、思路</h1><p>&emsp;&emsp;  这几年哔哩哔哩在学习领域上涌现了许多优质的教程，我尝试去上面搜了一下博客的搭建，看了几个视频，对比了一下，最后还是觉得Hexo这个博客框架比较容易上手，同时又许多人使用，网上容易找到这个博客的拓展教程和问题的处理方式。</p>
+<h2 id="2-1-用到的工具"><a href="#2-1-用到的工具" class="headerlink" title="2-1 用到的工具"></a>2-1 用到的工具</h2><h3 id="教程链接"><a href="#教程链接" class="headerlink" title="教程链接"></a><strong>教程链接</strong></h3><p>  <strong>网址：<a href="https://www.bilibili.com/video/av17653359" target="_blank" rel="noopener">https://www.bilibili.com/video/av17653359</a>   &amp;&amp;    <a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186</a></strong></p>
+<h3 id="博客框架"><a href="#博客框架" class="headerlink" title="博客框架"></a><strong>博客框架</strong></h3><ul>
+<li><p><strong>框架：Hexo</strong></p>
+<ul>
+<li>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</li>
+<li>丰富美观的主题可以选择</li>
+<li>插件丰富,拓展性强</li>
+</ul>
+</li>
+<li><p><strong>主题：NEXT</strong>    </p>
+<ul>
+<li>风格简约，操作简单</li>
+<li>多人使用，网上教程丰富且问题的解决方法容易找</li>
+</ul>
+</li>
+</ul>
+<h3 id="写作工具"><a href="#写作工具" class="headerlink" title="写作工具"></a><strong>写作工具</strong></h3><ul>
+<li><p><a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener"><strong><em>markdown</em></strong></a></p>
+<ul>
+<li>Markdown是一种轻量级标记语言，它以纯文本形式(<em>易读、易写、易更改</em>)编写文档，并最终以HTML格式发布。</li>
+<li>Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。</li>
+<li>专注你的文字内容而不是排版样式，安心写作</li>
+<li>轻松的导出 <code>HTML</code>、<code>PDF</code> 和本身的 <code>.md</code> 文件</li>
+<li>纯文本内容，兼容所有的文本编辑器与字处理软件</li>
+<li>可读、直观、学习成本低</li>
+</ul>
+</li>
+<li><p><strong><em>Typora</em></strong></p>
+<ul>
+<li><p>对新人相当友好的一款产品</p>
+</li>
+<li><p>创新地将预览与写作界面合二为一，输入即输出,这个特性让它卓尔不群</p>
+</li>
+<li><p>支持各大主流平台(Linux,Mac,Windows)</p>
+</li>
+<li><p>拓展语法丰富,支持图表和公式的编写</p>
+</li>
+<li><p>支持拖拽插入图片,这个功能不能少啊</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://i1.fuimg.com/709791/ed0f1449805c2fbf.png" alt="Typora"></p>
+<h1 id="3、总结"><a href="#3、总结" class="headerlink" title="3、总结"></a>3、总结</h1><p>&emsp; &emsp; 从看完教程到实践，看似花一两个小时的事，弄了六小时。博客的主题本想找一个自己喜欢的，发现过于小众，不懂得如何使用和丰富这个主题，到最后又重新回到了NEXT主题上。如果一开始没那么贪心，没那么杂七杂八的念头，或许都不用六个小时。<br>无论如何，也算是迈出了第一步了。博客还有许多可以拓展的地方，如打赏，评论功能等，但对于现在而言，这些功能足够使用了，与其花更多的时间琢磨那些功能插件，不如赶紧开始学习代码。</p>
+<blockquote>
+<p>种树的最佳时间是20年前，仅次于它的最佳时间就是现在。              —某乎网友</p>
+</blockquote>
+<p><img src="http://5b0988e595225.cdn.sohucs.com/images/20171203/33c1687153c04cefb5c3f37b73d1b326.jpeg" alt="tree"></p>
 ]]></content>
+      <categories>
+        <category>个人日记</category>
+      </categories>
+      <tags>
+        <tag>搭建博客</tag>
+      </tags>
   </entry>
 </search>
